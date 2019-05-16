@@ -7,27 +7,26 @@ import App from './Components/App';
 
 const theme = createMuiTheme({
   palette: {
+    text:{
+      primary: "#fff",
+      secondary: "#fff"
+    },
     primary: {
       main: '#1a1a1a'
     },
     secondary: {
       main: '#3c555d'
     },
-    
     spacing: {
       unit: 10
     },
     background: {
-      default: "#ebeaed"
+      default: "#ebeaed",
     }
   },
   typography: {
     useNextVariants: true,
-    "fontFamily": "\"Merriweather Sans\", sans-serif",
-    "fontSize": 16,
     "fontWeightLight": 300,
-    "fontWeightRegular": 400,
-    "fontWeightMedium": 500
   },
 })
 

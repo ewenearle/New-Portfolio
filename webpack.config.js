@@ -17,6 +17,7 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
+      
       {
         test: /\.(md|jpg|gif)$/i,
         use: [
@@ -31,10 +32,14 @@ module.exports = {
       
     ]
   },
+  devServer: {
+    historyApiFallback: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
     })
 
   ],
+  
 }

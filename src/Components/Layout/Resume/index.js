@@ -1,24 +1,20 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core';
-import Profile from './Profile'
- 
+import Profile from './Profile';
+import RelevantEducation from './RelevantEducation';
+import RelevantEmployment from './RelevantEmployment'; 
+import AdditionalEmployment from './AdditionalEmployment'; 
+import AdditionalTraining from './AdditionalTraining'; 
 
-const styles = theme => ({
-  main: {
-    flexGrow: 1,
-    backgroundColor: '#333e42',
-    color: 'white'
-  }
-});
-
-const Resume = (props) => {
-  const { classes } = props;
-
+const Resume = () => {
   return (
-    <div className={classes.main}>
+    <div>
       <Profile />
+      <RelevantEducation />
+      <RelevantEmployment />
+      <AdditionalEmployment />
+      <AdditionalTraining />
     </div>
   );
-}
+};
 
-export default withStyles(styles)(Resume);
+export default Resume;
