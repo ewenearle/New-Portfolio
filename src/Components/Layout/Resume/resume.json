@@ -1,0 +1,126 @@
+{
+ "courses": [ 
+    {
+      "name": "Team Treehouse (Online)",
+      "year":"2019",
+      "course":"Full Stack JavaScript Techdegree",
+      "topics":"Topics: React, Node.js, Express, SQLite, MongoDB"
+    },
+    {
+      "name": "Udemy (Online)",
+      "year":"2018",
+      "course":"The Complete Web Developer Bootcamp & The Complete JavaScript Course",
+      "topics":"Topics: jQuery, JavaScript ES5/ES6, HTML5, CSS3"
+    },
+    {
+      "name": "College of the North Atlantic",
+      "year":"2000-2003",
+      "course":"Programmer Analyst (Business) Co-op",
+      "topics":"Topics: Oracle, Java, C++, Visual Basic"
+    }
+ ],
+
+ "computerJobs": [
+    {
+      "title": "Computer Support",
+      "location": "NL Public Library, Summerford, NL",
+      "year": "2004"
+    },
+    {
+      "title": "Work Term III Placement",
+      "location": "Department of Mines and Energy, St. John's, NL",
+      "year": "2003"
+    },
+    {
+      "title": "Work Term II Placement",
+      "location": "Unversity of Aberdeen, Aberdeen, Scotland",
+      "year": "2002"
+    },
+    {
+      "title": "Work Term I Placement",
+      "location": "School District Board Office, Gander, NL",
+      "year": "2002"
+    }
+ ],
+
+ "computerTasks": [
+    {
+      "description": "Web design, development and administration"
+    },
+    {
+      "description": "Software, hardware, network support and troubleshooting"
+    },
+    {
+      "description": "Technical support and training for students and staff"
+    },
+    {
+      "description": "Technologies used: Adobe, Microsoft Office and WebCT"
+    }
+ ],
+
+ "constructionJobs": [
+    {
+      "title": "Scaffolder",
+      "location": "BrandSafway, Paradise, NL",
+      "year": "2014 - 2018"
+    },
+    {
+      "title": "Scaffolder",
+      "location": "Long Harbour Processing Plant, Long Harbour, NL",
+      "year": "2013 - 2014"
+    },
+    {
+      "title": "Scaffolder",
+      "location": "Iron Ore Company of Canada, Labrador City, Labrador",
+      "year": "2012"
+    }
+ ],
+ 
+ "constructionTasks": [
+    {
+      "description": "Foreman for various jobs. Zero safety incidents"
+    },
+    {
+      "description": "Hosted safety meetings"
+    },
+    {
+      "description": "Trained work term students on erecting scaffolds"
+    },
+    {
+      "description": "Assessed scaffolding jobs on construction sites"
+    }
+ ],
+
+ "otherTraining": [
+   {
+     "name": "First Aid, WHMIS",
+     "school": "Carpenters Millwright College",
+     "location": "Paradise, NL",
+     "year": "2018"
+   },
+   {
+    "name": "Journeyman Leadership Training",
+    "school": "Carpenters International Training Center",
+    "location": "Las Vegas, Nevada, U.S.A",
+    "year": "2014"
+  },
+  {
+    "name": "Scaffolding",
+    "school": "Carpenters Millwright College",
+    "location": "Paradise, NL",
+    "year": "2012"
+  },
+  {
+    "name": "Enlisted Military Education",
+    "school": "McGhee Tyson Air Nation Guard Base",
+    "location": "Knoxville, Tennessee, U.S.A",
+    "year": "2011"
+  },
+  {
+    "name": "Water, Fuels, Environment Technician",
+    "school": "Canadian Forces School of Engineering",
+    "location": "Oromocto, NB",
+    "year": "2009"
+  }
+ ]
+} 

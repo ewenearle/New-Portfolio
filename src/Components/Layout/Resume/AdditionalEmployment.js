@@ -2,6 +2,7 @@ import React from 'react'
 import { Typography, Grid, withStyles, List, ListItem, Divider } from '@material-ui/core';
 import Job from './Templates/Employment';
 import Task from './Templates/Tasks';
+import ResumeData from './resume.json'
 
 const styles = theme => ({
   main: {
@@ -32,6 +33,7 @@ const styles = theme => ({
 
 const AdditionalEmployment = (props) => {
   const { classes } = props;
+  const { constructionJobs, constructionTasks } = ResumeData;
   return (
     <div className={classes.main}>
       <Grid container spacing={8}>
@@ -44,23 +46,16 @@ const AdditionalEmployment = (props) => {
 
         <Grid item xs={6}>
           <List>
-            <Job jobTitle = "Scaffolder"
-                location = "BrandSafway, Paradise, NL"
-                year = "2014 - 2018"
-                class = {classes}
-            />
-
-           <Job jobTitle = "Scaffolder"
-                location = "Long Harbour Processing Plant, Long Harbour, NL"
-                year = "2013 - 2014"
-                class = {classes}
-            />
-
-            <Job jobTitle = "Scaffolder"
-                location = "Iron Ore Company of Canada, Labrador City, Labrador"
-                year = "2012"
-                class = {classes}
-            />
+            {constructionJobs.map((job, index) => {
+              return (
+                <Job title = {job.title}
+                  location = {job.location}
+                  year = {job.year}
+                  class = {classes}
+                  key = {index}
+                />
+              )
+            })}
           </List>  
         </Grid>
         
@@ -71,10 +66,11 @@ const AdditionalEmployment = (props) => {
                 Responsibilities:
               </Typography>
             </ListItem>
-            <Task description = "Erected, modified and dismantled scaffolding" class = {classes} />
-            <Task description = "Foreman for various jobs. Zero safety incidents" class = {classes} />
-            <Task description = "Trained work term students on erecting scaffolds" class = {classes} />
-            <Task description = "Assessed scaffolding jobs on construction sites" class = {classes} />
+            {constructionTasks.map((task, index) => {
+              return (
+                <Task description = {task.description} class = {classes} key = {index} />
+              )
+            })}
           </List>
         </Grid>
 
@@ -103,4 +99,4 @@ const AdditionalEmployment = (props) => {
   )
 }
 
-export default withStyles(styles)(AdditionalEmployment)
+export default withStyles(styles)(AdditionalEmployment);

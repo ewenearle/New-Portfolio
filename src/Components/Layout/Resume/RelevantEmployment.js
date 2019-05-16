@@ -1,7 +1,8 @@
 import React from 'react'
 import { Typography, Grid, withStyles, List, ListItem } from '@material-ui/core';
-import Job from './GridTemplates/Employment';
-import Task from './GridTemplates/Tasks';
+import Job from './Templates/Employment';
+import Task from './Templates/Tasks';
+import ResumeData from './resume.json'
 
 const styles = theme => ({
   main: {
@@ -28,10 +29,12 @@ const styles = theme => ({
   school:{
     fontWeight: 'bold'
   }
-})
+});
 
 const RelevantEmployment = (props) => {
   const { classes } = props;
+  const { computerJobs, computerTasks } = ResumeData;
+  
   return (
     <div className={classes.main}>
       <Grid container spacing={8}>
@@ -44,29 +47,11 @@ const RelevantEmployment = (props) => {
       
         <Grid item xs={6}>
           <List>
-            <Job jobTitle = "Computer Support"
-                location = "NL Public Library, Summerford, NL"
-                year = "2004"
-                class = {classes}
-            />
-
-            <Job jobTitle = "Work Term III Placement"
-                location = "Department of Mines and Energy, St. John's, NL"
-                year = "2003"
-                class = {classes}
-            />
-
-            <Job jobTitle = "Work Term II Placement"
-                location = "Unversity of Aberdeen, Aberdeen, Scotland"
-                year = "2002"
-                class = {classes}
-            />
-
-            <Job jobTitle = "Work Term I Placement"
-                location = "School District Board Office, Gander, NL"
-                year = "2002"
-                class = {classes}
-            />
+            {computerJobs.map((job, index) => {
+              return (
+                <Job title = {job.title} location = {job.location} year = {job.year} class = {classes} key = {index} />
+              )
+            })}
           </List>  
         </Grid>
         
@@ -76,11 +61,12 @@ const RelevantEmployment = (props) => {
               <Typography variant="h6" className={classes.school}>
                 Responsibilities:
               </Typography>
-            </ListItem>            
-            <Task description = "Web design, development and administration" class = {classes} />
-            <Task description = "Software, hardware, network support and troubleshooting" class = {classes} />
-            <Task description = "Technical support and training for students and staff" class = {classes} />
-            <Task description = "Technologies used: Adobe, Microsoft Office and WebCT" class = {classes} />
+            </ListItem> 
+            {computerTasks.map((task, index) => {
+              return (
+                <Task description = {task.description} class = {classes} key = {index} />
+              )
+            })}           
           </List>
         </Grid>
 

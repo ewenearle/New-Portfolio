@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { Typography, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import Work from '@material-ui/icons/Work';
 
-function Grids(props){
-  const { icon, school } = props.class
+function Employment(props){
+  const { icon, school } = props.class;
   return (
     <Fragment>
       <ListItem>        
@@ -13,7 +13,7 @@ function Grids(props){
           <ListItemText primary={
             <React.Fragment>
               <Typography variant="body1" className={school}>
-                {props.jobTitle}
+                {props.title}
               </Typography>
               <Typography variant="body2">
                 {props.location}
@@ -29,4 +29,4 @@ function Grids(props){
   )
 }
 
-export default Grids;
+export default Employment;

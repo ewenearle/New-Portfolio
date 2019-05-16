@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
-import Job from './Templates/Education.js.js';
+import Course from './Templates/Education';
+import ResumeData from './resume.json'
 
 const styles = theme => ({
   main: {
@@ -26,6 +27,8 @@ const styles = theme => ({
 
 const RelevantEducation = (props) => {
   const { classes } = props;
+  const { courses } = ResumeData;
+  
   return (
     <div className={classes.main}>
 
@@ -37,26 +40,17 @@ const RelevantEducation = (props) => {
           </Typography>
         </Grid>
 
-        <Job schoolName="Team Treehouse (Online)" 
-              year="2019" 
-              courseName="Full Stack JavaScript Techdegree" 
-              topics="Topics: React, Node.js, Express, SQLite, MongoDB"
-              class={classes}       
-        />
-
-        <Job schoolName="Udemy (Online)" 
-              year="2018" 
-              courseName="The Complete Web Developer Bootcamp & The Complete JavaScript Course" 
-              topics="Topics: jQuery, JavaScript ES5/ES6, HTML5, CSS3"
-              class={classes}       
-        />
-
-        <Job schoolName="College of the North Atlantic" 
-              year="2000-2003" 
-              courseName="Programmer Analyst (Business) Co-op" 
-              topics="Topics: Oracle, Java, C++, Visual Basic"
-              class={classes}       
-        />
+        {courses.map((course, index) => {
+          return (
+            <Course school={course.name} 
+                year={course.year} 
+                course={course.course} 
+                topics={course.topics}
+                class={classes}
+                key={index}
+            />
+          )
+        })}
       </Grid>
     </div>
   );
