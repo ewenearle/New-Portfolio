@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'index_bundle.js'
+    path: path.join(__dirname, '/build'),
+    publicPath: '/',
+    filename: 'bundle.js'
   },
- 
+  devServer: {
+    contentBase: "./build",
+  },
   module: {
     rules: [
       {
@@ -37,8 +40,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: path.resolve('./src/index.html'),
+    }),
 
   ],
   
