@@ -16,7 +16,8 @@ const styles = theme => ({
     color: '#fff',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textDecoration: 'underline'
   },
   icon: {
     color: '#fff'
@@ -62,15 +63,17 @@ const AdditionalEmployment = (props) => {
         <Grid item xs={6}>
           <List>         
             <ListItem>        
-              <Typography variant="h6" className={classes.school}>
+              <Typography variant="body1" className={classes.school}>
                 Responsibilities:
               </Typography>
             </ListItem>
+
             {constructionTasks.map((task, index) => {
               return (
                 <Task description = {task.description} class = {classes} key = {index} />
               )
             })}
+            
           </List>
         </Grid>
 

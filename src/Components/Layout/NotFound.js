@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, withStyles, ListItemIcon } from '@material-ui/core';
+import { Grid, withStyles } from '@material-ui/core';
 import Error from '@material-ui/icons/Error'; 
 
 const styles = theme => ({
@@ -17,7 +17,7 @@ const styles = theme => ({
     width: 50,
     height: 50
   }
-})
+});
 
 const NotFound = (props) => {
   const { classes } = props;
@@ -30,7 +30,7 @@ const NotFound = (props) => {
         </Grid>
       </Grid>
     </div>
-  )
-}
+  );
+};
 
 export default withStyles(styles)(NotFound);

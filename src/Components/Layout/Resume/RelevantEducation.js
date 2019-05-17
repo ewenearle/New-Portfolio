@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
 import Course from './Templates/Education';
-import ResumeData from './resume.json'
+import ResumeData from './resume.json';
 
 const styles = theme => ({
   main: {
@@ -15,7 +15,8 @@ const styles = theme => ({
     color: '#fff',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textDecoration: 'underline'
   },
   icon: {
     color: '#fff'
@@ -33,7 +34,6 @@ const RelevantEducation = (props) => {
     <div className={classes.main}>
 
       <Grid container spacing={8}>
-
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
             Relevant Education and Training
@@ -51,6 +51,7 @@ const RelevantEducation = (props) => {
             />
           )
         })}
+
       </Grid>
     </div>
   );

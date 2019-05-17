@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Typography, Grid, withStyles, List, ListItem } from '@material-ui/core';
 import Job from './Templates/Employment';
 import Task from './Templates/Tasks';
-import ResumeData from './resume.json'
+import ResumeData from './resume.json';
 
 const styles = theme => ({
   main: {
@@ -16,7 +16,8 @@ const styles = theme => ({
     color: '#fff',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textDecoration: 'underline'
   },
   icon: {
     color: '#fff'
@@ -38,7 +39,6 @@ const RelevantEmployment = (props) => {
   return (
     <div className={classes.main}>
       <Grid container spacing={8}>
-
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
             Relevant Employment Experience
@@ -47,32 +47,35 @@ const RelevantEmployment = (props) => {
       
         <Grid item xs={6}>
           <List>
+
             {computerJobs.map((job, index) => {
               return (
                 <Job title = {job.title} location = {job.location} year = {job.year} class = {classes} key = {index} />
               )
             })}
+            
           </List>  
         </Grid>
         
         <Grid item xs={6}>
           <List>
             <ListItem>        
-              <Typography variant="h6" className={classes.school}>
+              <Typography variant="body1" className={classes.school}>
                 Responsibilities:
               </Typography>
             </ListItem> 
+
             {computerTasks.map((task, index) => {
               return (
                 <Task description = {task.description} class = {classes} key = {index} />
               )
-            })}           
+            })}
+
           </List>
         </Grid>
-
       </Grid>
     </div>
-  )
-}
+  );
+};
 
-export default withStyles(styles)(RelevantEmployment)
+export default withStyles(styles)(RelevantEmployment);

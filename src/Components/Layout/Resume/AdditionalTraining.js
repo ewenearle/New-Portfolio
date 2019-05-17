@@ -15,7 +15,8 @@ const styles = theme => ({
     color: '#fff',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textDecoration: 'underline'
   },
   icon: {
     color: '#fff'
@@ -44,7 +45,6 @@ const AdditionalTraining = (props) => {
         </Grid>
          
         { otherTraining.map((course, index) => {    
-          
           return (
             <Course name={course.name}
                 school={course.school}
@@ -52,7 +52,7 @@ const AdditionalTraining = (props) => {
                 year={course.year}
                 class={classes}
                 key={index}
-                style={index === 0 ? { marginRight: "5%" } : {}}      
+                style={index === 0 ? { marginRight: "5.2%" } : {}}      
             />
           )
         })}

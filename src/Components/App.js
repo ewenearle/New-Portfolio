@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-
-import Resume from './Layout/Resume'
-import NotFound from './Layout/NotFound.js'
-import Header from './Layout/Header.js'
+import Resume from './Layout/Resume';
+import NotFound from './Layout/NotFound';
+import Header from './Layout/Header';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
@@ -21,7 +20,7 @@ const styles = theme => ({
     backgroundColor: '#595959',
     boxShadow: '0 3px 5px 2px grey'
   } 
-})
+});
 
 class App extends Component {
   render() { 
@@ -32,13 +31,12 @@ class App extends Component {
           <Switch>
             <Route exact path='/resume' render={() =>  <Redirect to='/' />}/>  
             <Route exact path="/" component={Resume} />
-            
             <Route component = {NotFound} />
           </Switch>
         </BrowserRouter>   
       </div>  
     )  
-  }
-}
+  };
+};
 
 export default withStyles(styles)(App);
