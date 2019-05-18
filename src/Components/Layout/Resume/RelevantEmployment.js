@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Typography, Grid, withStyles, List, ListItem } from '@material-ui/core';
 import Job from './Templates/Employment';
 import Task from './Templates/Tasks';
@@ -11,7 +11,7 @@ const styles = theme => ({
     color: '#fff'
   },
   title: {
-    marginTop: 25,
+    marginTop: 20,
     marginBottom: 20,
     color: '#ededed',
     textAlign: 'center',
@@ -43,8 +43,8 @@ const RelevantEmployment = (props) => {
   const { computerJobs, computerTasks } = ResumeData;
   
   return (
-    <div className={classes.main}>
-      <Grid container spacing={8}>
+    <Fragment>
+      <Grid container spacing={24} className={classes.main}>
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
             Relevant Employment Experience
@@ -80,7 +80,7 @@ const RelevantEmployment = (props) => {
           </List>
         </Grid>
       </Grid>
-    </div>
+    </Fragment>
   );
 };
 

@@ -3,10 +3,10 @@ import { Typography, Grid, List, ListItem, ListItemIcon, ListItemText } from '@m
 import School from '@material-ui/icons/School';
 
 function Education(props){
-  const { icon, school, responsiveGrid, responsiveTitle } = props.class;
+  const { icon, school, responsiveSchool, responsiveCourse, responsiveTitle } = props.class;
   return ( 
     <Fragment>
-      <Grid item xs={4} className={responsiveGrid}>
+      <Grid item xs={4} className={responsiveSchool}>
         <List>
           <ListItem>        
             <ListItemIcon >
@@ -27,7 +27,7 @@ function Education(props){
         </List>  
       </Grid>
 
-      <Grid item xs={8} className={responsiveGrid}>
+      <Grid item xs={8} className={responsiveCourse}>
         <List>
           <ListItem>        
             <ListItemText 

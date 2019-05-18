@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography, Grid, Avatar, withStyles, List, ListItem, ListItemIcon, SvgIcon, Divider } from '@material-ui/core';
+import React, { Fragment } from 'react';
+import { Typography, Grid, Avatar, withStyles, List, ListItem, ListItemIcon, SvgIcon } from '@material-ui/core';
 import Email from '@material-ui/icons/Email';
 import Home from '@material-ui/icons/Home'; 
 import Phone from '@material-ui/icons/Phone'; 
@@ -19,15 +19,15 @@ const styles = theme => ({
     marginLeft: 20,
     lineHeight: '1.5',
     "fontFamily": "\"Work Sans\", sans-serif",
-    [theme.breakpoints.down('md')]: {
-      marginRight: '1em'
-    }
   },
   profileTitle: { 
     textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 'bold',
-    color: '#ededed'
+    color: '#ededed',
+    [theme.breakpoints.down('md')]: {
+      marginRight: '1em'
+    }
   },
   avatar: {
     margin: 'auto',
@@ -43,9 +43,7 @@ const styles = theme => ({
     textTransform: 'uppercase',
     marginLeft: 20,
     textAlign: 'left',
-    lineHeight: '1.5',
     fontWeight: 'bold',
-    "fontFamily": "\"Work Sans\", sans-serif",
     [theme.breakpoints.down('md')]: {
       display: 'inline-block',
       marginLeft: 0
@@ -69,12 +67,12 @@ const styles = theme => ({
 const Profile = (props) => {
   const { classes } = props;
   return (
-    <div className={classes.main}>
-      <Grid container spacing={24}>
+    <Fragment>
+      <Grid container spacing={24} className={classes.main}>
         
         <Grid item xs={12} className={classes.title}>
           <h1>Ewen Earle</h1>
-          <h2>Full Stack Web Developer</h2>
+          <h2 style={{"fontFamily": "\"Work Sans\", sans-serif"}}>Full Stack Web Developer</h2>
         </Grid>
 
         <Grid item xs>
@@ -85,7 +83,7 @@ const Profile = (props) => {
         </Grid>
 
         <Grid item xs={12} md={3}>
-          <Avatar alt="Ewen Earle" src={require('../../../images/profile.jpg')} className={classes.avatar} />
+          <Avatar alt="Ewen Earle" src={require('../../../Images/profile.jpg')} className={classes.avatar} />
         </Grid>
 
         <Grid item xs className={classes.contact}>
@@ -125,7 +123,7 @@ const Profile = (props) => {
           </Grid>
         </Grid>    
       </Grid>
-    </div>
+    </Fragment>
   );
 };
 

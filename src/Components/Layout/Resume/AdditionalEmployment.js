@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Typography, Grid, withStyles, List, ListItem, Divider } from '@material-ui/core';
 import Job from './Templates/Employment';
 import Task from './Templates/Tasks';
@@ -11,7 +11,7 @@ const styles = theme => ({
     color: '#fff'
   },
   title: {
-    marginTop: 25,
+    marginTop: 20,
     marginBottom: 20,
     color: '#ededed',
     textAlign: 'center',
@@ -42,8 +42,8 @@ const AdditionalEmployment = (props) => {
   const { classes } = props;
   const { constructionJobs, constructionTasks } = ResumeData;
   return (
-    <div className={classes.main}>
-      <Grid container spacing={8}>
+    <Fragment>
+      <Grid container spacing={24} className={classes.main}>
 
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
@@ -104,7 +104,7 @@ const AdditionalEmployment = (props) => {
           </List>
         </Grid>  
       </Grid>
-    </div>
+    </Fragment>
   )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
 import Course from './Templates/Training';
 import ResumeData from './resume.json'
@@ -10,7 +10,7 @@ const styles = theme => ({
     color: '#fff'
   },
   title: {
-    marginTop: 25,
+    marginTop: 20,
     marginBottom: 20,
     color: '#ededed',
     textAlign: 'center',
@@ -34,8 +34,8 @@ const AdditionalTraining = (props) => {
   const { classes } = props;
   const { otherTraining } = ResumeData;
   return (
-    <div className={classes.main}>
-      <Grid container spacing={8}>
+    <Fragment>
+      <Grid container spacing={24} className={classes.main}>
 
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
@@ -57,7 +57,7 @@ const AdditionalTraining = (props) => {
         })}
 
       </Grid>
-    </div>
+    </Fragment>
   )
 }
 

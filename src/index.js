@@ -27,8 +27,9 @@ const theme = createMuiTheme({
     useNextVariants: true,
     "fontWeightLight": 300,
   },
+  
 })
-
+ 
 /* COLOR SCHEME
 ===============
    gunmetal 233237
