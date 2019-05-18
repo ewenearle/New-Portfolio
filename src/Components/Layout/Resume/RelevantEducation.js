@@ -12,17 +12,28 @@ const styles = theme => ({
   title: {
     marginTop: 25,
     marginBottom: 20,
-    color: '#fff',
+    color: '#ededed',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold',
-    textDecoration: 'underline'
+    fontWeight: 'bold'  
   },
   icon: {
     color: '#fff'
   },
   school:{
     fontWeight: 'bold'
+  },
+  responsiveGrid:{
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100%',
+      flexBasis: '100%',
+      marginTop: -10
+    },
+  },
+  responsiveTitle:{
+    [theme.breakpoints.down('xs')]: {
+      paddingRight: 0
+    }
   }
 });
 

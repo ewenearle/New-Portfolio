@@ -12,22 +12,27 @@ const styles = theme => ({
     marginBottom: 20, 
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
+    
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
       marginRight: 'auto',
+    },
+    [theme.breakpoints.down('md')]: {
+      margin: 0
     },
     backgroundColor: '#595959',
     boxShadow: '0 3px 5px 2px grey'
   } 
 });
 
+
 class App extends Component {
   render() { 
     return (
       <div className={this.props.classes.layout}>
         <BrowserRouter>
-          <Header />
+          {/* <Header /> */}
           <Switch>
             <Route exact path='/resume' render={() =>  <Redirect to='/' />}/>  
             <Route exact path="/" component={Resume} />

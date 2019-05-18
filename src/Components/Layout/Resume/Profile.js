@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Avatar, withStyles, List, ListItem, ListItemIcon, SvgIcon } from '@material-ui/core';
+import { Typography, Grid, Avatar, withStyles, List, ListItem, ListItemIcon, SvgIcon, Divider } from '@material-ui/core';
 import Email from '@material-ui/icons/Email';
 import Home from '@material-ui/icons/Home'; 
 import Phone from '@material-ui/icons/Phone'; 
@@ -26,7 +26,8 @@ const styles = theme => ({
   profileTitle: { 
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: '#ededed'
   },
   avatar: {
     margin: 'auto',
@@ -46,8 +47,10 @@ const styles = theme => ({
     fontWeight: 'bold',
     "fontFamily": "\"Work Sans\", sans-serif",
     [theme.breakpoints.down('md')]: {
-      display: 'inline-block'
-    }
+      display: 'inline-block',
+      marginLeft: 0
+    },
+    color: '#ededed'
   },
   contact: {
     textAlign: 'center',

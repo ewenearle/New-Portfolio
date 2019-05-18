@@ -12,11 +12,10 @@ const styles = theme => ({
   title: {
     marginTop: 25,
     marginBottom: 20,
-    color: '#fff',
+    color: '#ededed',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold',
-    textDecoration: 'underline'
+    fontWeight: 'bold'
   },
   icon: {
     color: '#fff'
@@ -52,7 +51,7 @@ const AdditionalTraining = (props) => {
                 year={course.year}
                 class={classes}
                 key={index}
-                style={index === 0 ? { marginRight: "5.2%" } : {}}      
+                // style={index === 0 ? { marginRight: "5.2%" } : {}}      
             />
           )
         })}

@@ -7,7 +7,7 @@ function Training(props){
   
   return (
     <Fragment>
-      <Grid item style={props.style}>
+      <Grid item lg={4}>
         <List>
           <ListItem>        
             <ListItemIcon >

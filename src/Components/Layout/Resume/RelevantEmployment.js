@@ -13,11 +13,10 @@ const styles = theme => ({
   title: {
     marginTop: 25,
     marginBottom: 20,
-    color: '#fff',
+    color: '#ededed',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold',
-    textDecoration: 'underline'
+    fontWeight: 'bold'
   },
   icon: {
     color: '#fff'
@@ -29,6 +28,13 @@ const styles = theme => ({
   },
   school:{
     fontWeight: 'bold'
+  },
+  responsiveGrid:{
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100%',
+      flexBasis: '100%',
+      marginTop: -10
+    }
   }
 });
 
@@ -45,7 +51,7 @@ const RelevantEmployment = (props) => {
           </Typography>
         </Grid>
       
-        <Grid item xs={6}>
+        <Grid item xs={6} className={classes.responsiveGrid}>
           <List>
 
             {computerJobs.map((job, index) => {
@@ -57,7 +63,7 @@ const RelevantEmployment = (props) => {
           </List>  
         </Grid>
         
-        <Grid item xs={6}>
+        <Grid item xs={6} className={classes.responsiveGrid}>
           <List>
             <ListItem>        
               <Typography variant="body1" className={classes.school}>

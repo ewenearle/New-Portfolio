@@ -13,11 +13,10 @@ const styles = theme => ({
   title: {
     marginTop: 25,
     marginBottom: 20,
-    color: '#fff',
+    color: '#ededed',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold',
-    textDecoration: 'underline'
+    fontWeight: 'bold'
   },
   icon: {
     color: '#fff'
@@ -29,6 +28,13 @@ const styles = theme => ({
   },
   school:{
     fontWeight: 'bold'
+  },
+  responsiveGrid:{
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100%',
+      flexBasis: '100%',
+      marginTop: -10
+    }
   }
 })
 
@@ -45,7 +51,7 @@ const AdditionalEmployment = (props) => {
           </Typography>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item xs={6} className={classes.responsiveGrid}>
           <List>
             {constructionJobs.map((job, index) => {
               return (
@@ -60,7 +66,7 @@ const AdditionalEmployment = (props) => {
           </List>  
         </Grid>
         
-        <Grid item xs={6}>
+        <Grid item xs={6} className={classes.responsiveGrid}>
           <List>         
             <ListItem>        
               <Typography variant="body1" className={classes.school}>
@@ -81,7 +87,7 @@ const AdditionalEmployment = (props) => {
           <Divider />
         </Grid>
 
-        <Grid item xs={6}>   
+        <Grid item xs={6} className={classes.responsiveGrid}>   
           <List>
             <Job jobTitle = "Water, Fuels, Environment Technician"
                   location = "Canadian Forces, Gander, NL"
@@ -91,7 +97,7 @@ const AdditionalEmployment = (props) => {
           </List>
         </Grid>
 
-        <Grid item xs={6}>        
+        <Grid item xs={6} className={classes.responsiveGrid}>        
           <List>
             <Task description = "Operated water and wastewater treatment facilities" class = {classes} />
             <Task description = "Assisted carpenters in construction work for non-profit organizations" class = {classes} />
