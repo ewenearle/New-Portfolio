@@ -4,8 +4,9 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Ewen Earle",
   "license": "MIT",
