@@ -9,11 +9,16 @@ const styles = theme => ({
     flexGrow: 1,
     backgroundColor: '#333e42',
     color: 'white',
-    marginBottom: 10
+    marginBottom: 5
   },
   title: {
     textAlign: 'center',
     "fontFamily": "\"Merriweather Sans\", sans-serif"
+  },
+  jobTitle: {
+    "fontFamily": "\"Work Sans\", sans-serif",
+    fontSize: 20,
+    
   },
   profile: {
     marginLeft: 20,
@@ -27,7 +32,8 @@ const styles = theme => ({
     color: '#ededed',
     [theme.breakpoints.down('md')]: {
       marginRight: '1em'
-    }
+    },
+    textDecoration: 'underline',
   },
   avatar: {
     margin: 'auto',
@@ -48,7 +54,8 @@ const styles = theme => ({
       display: 'inline-block',
       marginLeft: 0
     },
-    color: '#ededed'
+    color: '#ededed',
+    textDecoration: 'underline'
   },
   contact: {
     textAlign: 'center',
@@ -68,11 +75,11 @@ const Profile = (props) => {
   const { classes } = props;
   return (
     <Fragment>
-      <Grid container spacing={24} className={classes.main}>
+      <Grid container spacing={16} className={classes.main}>
         
         <Grid item xs={12} className={classes.title}>
-          <h1>Ewen Earle</h1>
-          <h2 style={{"fontFamily": "\"Work Sans\", sans-serif"}}>Full Stack Web Developer</h2>
+          <h1 style={{fontSize: 35}}>Ewen Earle</h1>
+          <h2 className={classes.jobTitle}>Full Stack Web Developer</h2>
         </Grid>
 
         <Grid item xs>

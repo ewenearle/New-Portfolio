@@ -43,7 +43,7 @@ const AdditionalEmployment = (props) => {
   const { constructionJobs, constructionTasks } = ResumeData;
   return (
     <Fragment>
-      <Grid container spacing={24} className={classes.main}>
+      <Grid container spacing={16} className={classes.main}>
 
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
