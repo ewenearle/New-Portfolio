@@ -87,7 +87,7 @@ const AdditionalEmployment = (props) => {
         {/* Other employment that didn't logically fit in the JSON file */}
         <Grid item xs={12}>
           <Divider />
-        </Grid>=
+        </Grid>
         <Grid item xs={6} className={classes.responsiveGrid}>   
           <List>
             <Job jobTitle = "Water, Fuels, Environment Technician"
