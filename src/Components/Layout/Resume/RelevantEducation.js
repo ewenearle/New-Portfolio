@@ -28,8 +28,7 @@ const styles = theme => ({
       maxWidth: '100%',
       flexBasis: '100%',
       marginBottom: -40
-    },
-    
+    },  
   },
   responsiveCourse:{
     [theme.breakpoints.down('xs')]: {
@@ -57,7 +56,8 @@ const RelevantEducation = (props) => {
             Relevant Education and Training
           </Typography>
         </Grid>
-
+        
+        {/* Pull required data from JSON file */}
         {courses.map((course, index) => {
           return (
             <Course school={course.name} 

@@ -13,8 +13,7 @@ const styles = theme => ({
   title: {
     textAlign: 'center',
     marginTop: 20,
-    height: '100vh'
-    
+    height: '100vh'  
   },
   icon: {
     color: '#fff',
@@ -25,7 +24,7 @@ const styles = theme => ({
     color: '#fff',
     '&:hover': {
       textDecoration: "none",
-   },
+   }
   }
 });
 
@@ -38,7 +37,6 @@ const NotFound = (props) => {
           <Error className={classes.icon}/>
           <h1>404 - Oops! Page not found</h1>
           <Typography variant="h6"><Link href="/" className={classes.link}>Go back</Link></Typography>
-         
         </Grid>
       </Grid>
     </div>

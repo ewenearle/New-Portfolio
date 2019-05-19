@@ -5,6 +5,9 @@ import School from '@material-ui/icons/School';
 function Training(props){
   const { icon, school } = props.class;
   
+
+  /* List items that are iterated and passed props from AdditionalTraining.js */ 
+
   return (
     <Fragment>
       <Grid item lg={4}>

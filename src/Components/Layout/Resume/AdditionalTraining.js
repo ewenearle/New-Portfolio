@@ -36,13 +36,13 @@ const AdditionalTraining = (props) => {
   return (
     <Fragment>
       <Grid container spacing={16} className={classes.main}>
-
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
             Additional Training
           </Typography>
         </Grid>
          
+        {/* Pull required data from JSON file */}
         { otherTraining.map((course, index) => {    
           return (
             <Course name={course.name}
@@ -50,8 +50,7 @@ const AdditionalTraining = (props) => {
                 location={course.location}
                 year={course.year}
                 class={classes}
-                key={index}
-                // style={index === 0 ? { marginRight: "5.2%" } : {}}      
+                key={index}    
             />
           )
         })}

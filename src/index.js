@@ -26,22 +26,20 @@ const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
     "fontWeightLight": 300,
-  },
-  
-})
- 
-/* COLOR SCHEME
-===============
-   gunmetal 233237
-   rusty red 984b43
-   warm yellow eac67a
-   navy blue 18121e */
-
+  }, 
+});
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
-  <CssBaseline />
-    <App />
+    <CssBaseline />
+      <App />
   </MuiThemeProvider>, 
   document.getElementById('app')
 )
+
+/* COLOR SCHEME
+===============
+gunmetal 233237
+rusty red 984b43
+warm yellow eac67a
+navy blue 18121e */

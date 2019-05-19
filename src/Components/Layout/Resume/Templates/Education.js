@@ -4,6 +4,9 @@ import School from '@material-ui/icons/School';
 
 function Education(props){
   const { icon, school, responsiveSchool, responsiveCourse, responsiveTitle } = props.class;
+
+  /* List items that are iterated and passed props from RelevantEducation.js  */
+  
   return ( 
     <Fragment>
       <Grid item xs={4} className={responsiveSchool}>

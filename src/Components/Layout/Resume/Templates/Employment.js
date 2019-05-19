@@ -4,6 +4,9 @@ import Work from '@material-ui/icons/Work';
 
 function Employment(props){
   const { icon, school } = props.class;
+
+  /* List items that are iterated and passed props from AdditionalEmployment.js & RelevantEmployment.js  */ 
+
   return (
     <Fragment>
       <ListItem>        

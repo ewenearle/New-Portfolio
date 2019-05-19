@@ -44,15 +44,15 @@ const AdditionalEmployment = (props) => {
   return (
     <Fragment>
       <Grid container spacing={16} className={classes.main}>
-
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
             Additional Employment Experience
           </Typography>
         </Grid>
-
         <Grid item xs={6} className={classes.responsiveGrid}>
           <List>
+
+            {/* Pull required data from JSON file */}
             {constructionJobs.map((job, index) => {
               return (
                 <Job title = {job.title}
@@ -63,9 +63,9 @@ const AdditionalEmployment = (props) => {
                 />
               )
             })}
+
           </List>  
         </Grid>
-        
         <Grid item xs={6} className={classes.responsiveGrid}>
           <List>         
             <ListItem>        
@@ -74,6 +74,7 @@ const AdditionalEmployment = (props) => {
               </Typography>
             </ListItem>
 
+            {/* Pull required data from JSON file */}
             {constructionTasks.map((task, index) => {
               return (
                 <Task description = {task.description} class = {classes} key = {index} />
@@ -83,10 +84,10 @@ const AdditionalEmployment = (props) => {
           </List>
         </Grid>
 
+        {/* Other employment that didn't logically fit in the JSON file */}
         <Grid item xs={12}>
           <Divider />
-        </Grid>
-
+        </Grid>=
         <Grid item xs={6} className={classes.responsiveGrid}>   
           <List>
             <Job jobTitle = "Water, Fuels, Environment Technician"
@@ -96,7 +97,6 @@ const AdditionalEmployment = (props) => {
             />
           </List>
         </Grid>
-
         <Grid item xs={6} className={classes.responsiveGrid}>        
           <List>
             <Task description = "Operated water and wastewater treatment facilities" class = {classes} />

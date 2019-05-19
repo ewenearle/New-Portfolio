@@ -33,7 +33,6 @@ const styles = theme => ({
     [theme.breakpoints.down('md')]: {
       marginRight: '1em'
     },
-    textDecoration: 'underline',
   },
   avatar: {
     margin: 'auto',
@@ -55,7 +54,6 @@ const styles = theme => ({
       marginLeft: 0
     },
     color: '#ededed',
-    textDecoration: 'underline'
   },
   contact: {
     textAlign: 'center',

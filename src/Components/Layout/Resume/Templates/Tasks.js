@@ -3,6 +3,9 @@ import { Typography, ListItem, ListItemIcon } from '@material-ui/core';
 import Lens from '@material-ui/icons/Lens';
 
 function Tasks(props){
+
+  /* List items that are iterated and passed props from AdditionalEmployment.js & RelevantEmployment.js  */ 
+
   return ( 
     <Fragment>
       <ListItem> 
