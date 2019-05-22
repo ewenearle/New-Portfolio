@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 import Home from './Layout/Home';
-import CoverLetter from './Layout/CoverLetter';
+import CoverLetter from './Layout/Resume/CoverLetter';
 import Resume from './Layout/Resume';
 import NotFound from './Layout/NotFound';
 // import Projects from './Layout/Projects';

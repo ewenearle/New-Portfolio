@@ -8,14 +8,14 @@ const styles = theme => ({
   button: {
     margin: theme.spacing.unit * 2,
     '&:hover': {
-      color: '#cecccc',
+      color: '#b2b0b0',
       background: '#1a1a1a'
     },
     "fontFamily": "\"Merriweather Sans\", sans-serif",
     fontSize: 18
   },
   active: {
-    color: '#cecccc'
+    color: '#b2b0b0'
   },
   nav:{
     justifyContent: 'center'

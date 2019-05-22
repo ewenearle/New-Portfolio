@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Grid, withStyles, Typography } from '@material-ui/core';
-import Background from '../../../../background/test3.jpg' 
-import Flag from '../../../../background/1510038-200.png' 
+import Background from '../../images/background.jpg'; 
+import Flag from '../../images/flag.png'; 
 
 const styles = theme => ({
   main: {
@@ -35,18 +35,18 @@ const styles = theme => ({
 });
 
 const Home = (props) => {
-  const { classes } = props;
+  const { main, background, welcome, flag } = props.classes;
   return (
     <Fragment>
-      <Grid container spacing={16} className={classes.main}>      
-        <Grid item xs={12} className={classes.background}>
-          <Typography variant="h3" gutterBottom className={classes.welcome}>
+      <Grid container spacing={16} className={main}>      
+        <Grid item xs={12} className={background}>
+          <Typography variant="h3" gutterBottom className={welcome}>
               Hello, my name is <span style={{color: '#c64335'}}> Ewen Earle</span>
           </Typography>  
-          <Typography variant="h5" gutterBottom style={{marginTop: '1em'}} className={classes.welcome}>
+          <Typography variant="h5" gutterBottom style={{marginTop: '1em'}} className={welcome}>
               I'm a Web Developer from St. John's, Newfoundland        
           </Typography>   
-          <Typography variant="h5" gutterBottom className={classes.flag}>
+          <Typography variant="h5" gutterBottom className={flag}>
               <img src = {Flag} />
           </Typography>      
         </Grid>     

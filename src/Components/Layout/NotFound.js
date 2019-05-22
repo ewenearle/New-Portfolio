@@ -11,7 +11,7 @@ const styles = theme => ({
   },
   title: {
     textAlign: 'center',
-    marginTop: 20,
+    marginTop: 40,
     height: '100vh'  
   },
   icon: {
@@ -23,6 +23,7 @@ const styles = theme => ({
     color: '#fff',
     '&:hover': {
       textDecoration: "none",
+      color: '#b2b0b0'
    }
   }
 });
