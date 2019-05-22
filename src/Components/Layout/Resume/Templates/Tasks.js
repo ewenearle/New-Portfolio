@@ -9,7 +9,7 @@ function Tasks(props){
   return ( 
     <Fragment>
       <ListItem> 
-        <ListItemIcon >
+        <ListItemIcon>
           <Lens className={props.class.bullet}/>
         </ListItemIcon>       
         <Typography variant="body2">

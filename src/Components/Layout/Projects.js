@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import { Grid, withStyles, Link, Typography } from '@material-ui/core';
-import Error from '@material-ui/icons/Error'; 
 
 const styles = theme => ({
   main: {
     flexGrow: 1,
     backgroundColor: '#333e42',
     color: 'white',
+    
     "fontFamily": "\"Merriweather Sans\", sans-serif"
   },
   title: {
@@ -24,23 +24,23 @@ const styles = theme => ({
     '&:hover': {
       textDecoration: "none",
    }
-  }
+  },
+  
 });
 
-const NotFound = (props) => {
-  console.log(props.match.url)
+const Projects = (props) => {
   const { classes } = props;
   return (
-    <Fragment>
+    <Fragment >
       <Grid container spacing={16} className={classes.main}>
         <Grid item xs={12} className={classes.title}>
-          <Error className={classes.icon}/>
-          <h1>404 - Oops! Page not found</h1>
-          <Typography variant="h6"><Link href="/" className={classes.link}>Go back</Link></Typography>
+         
+          <h1>Projects</h1>
+          
         </Grid>
       </Grid>
     </Fragment>
   );
 };
 
-export default withStyles(styles)(NotFound);
+export default withStyles(styles)(Projects);
