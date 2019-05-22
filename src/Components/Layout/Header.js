@@ -29,7 +29,7 @@ const styles = theme => ({
     justifyContent: 'center'
   },
   icon: {
-    marginTop: 8,
+    
     cursor: 'pointer',
     '&:hover': {
       color: '#cecccc',
@@ -72,7 +72,7 @@ class NavBar extends Component {
         <Grid container spacing={16}>
           <AppBar position="static">
             <Toolbar className={center} >
-              <MenuIcon className={icon} onClick={()=>{this.setState({ drawer: true })}} />
+              <MenuIcon style={{marginTop: 8}} className={icon} onClick={()=>{this.setState({ drawer: true })}} />
             </Toolbar>
           </AppBar>
         </Grid>
@@ -90,9 +90,9 @@ class NavBar extends Component {
             onKeyDown={()=>{this.setState({ drawer: false })}}>
             
           <List>
-            <ListItem component={NavLink} to="/" button divider> Home </ListItem>
-            <ListItem component={NavLink} to="/coverletter" button divider> Cover Letter </ListItem>
-            <ListItem component={NavLink} to="/resume" button divider> Resume </ListItem>
+            <ListItem component={NavLink} className={icon} to="/" button divider> Home </ListItem>
+            <ListItem component={NavLink} className={icon} to="/coverletter" button divider> Cover Letter </ListItem>
+            <ListItem component={NavLink} className={icon} to="/resume" button divider> Resume </ListItem>
             {/* <ListItem component={NavLink} to="/projects" button divider> Projects </ListItem> */}
             {/* <ListItem component={NavLink} to="/about" button divider> About Me </ListItem> */}
           </List>

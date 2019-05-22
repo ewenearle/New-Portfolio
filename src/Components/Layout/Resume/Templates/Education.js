@@ -17,11 +17,11 @@ function Education(props){
             </ListItemIcon>
             <ListItemText 
               primary={
-                <React.Fragment>
+                <Fragment>
                   <Typography className = {school} variant="body1">
                     {props.school}
                   </Typography>
-                </React.Fragment>
+                </Fragment>
               }
               secondary={props.year} 
               className={responsiveTitle}
@@ -35,11 +35,11 @@ function Education(props){
           <ListItem>        
             <ListItemText 
               primary={
-                <React.Fragment>
+                <Fragment>
                   <Typography className = {school} variant="body1">
                     {props.course}
                   </Typography>
-                </React.Fragment>
+                </Fragment>
               }
               secondary={props.topics}
             />

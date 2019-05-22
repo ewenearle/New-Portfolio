@@ -58,6 +58,7 @@ const RelevantEducation = (props) => {
         </Grid>
         
         {/* Pull required data from JSON file */}
+        
         {courses.map((course, index) => {
           return (
             <Course school={course.name} 

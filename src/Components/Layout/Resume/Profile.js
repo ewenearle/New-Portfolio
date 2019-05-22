@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Typography, Grid, Avatar, withStyles, List, ListItem, ListItemIcon } from '@material-ui/core';
+import ProfilePicture from '../../../images/profile.jpg';
 import Email from '@material-ui/icons/Email';
 import Home from '@material-ui/icons/Home'; 
 import Phone from '@material-ui/icons/Phone';
-import ProfilePicture from '../../../images/profile.jpg';
 import GitHubIcon from '../GitHubIcon.js';
 
 const styles = theme => ({

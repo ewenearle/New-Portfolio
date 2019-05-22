@@ -14,7 +14,7 @@ function Employment(props){
           <Work className={icon}/>
         </ListItemIcon>
           <ListItemText primary={
-            <React.Fragment>
+            <Fragment>
               <Typography variant="body1" className={school}>
                 {props.title}
               </Typography>
@@ -24,7 +24,7 @@ function Employment(props){
               <Typography variant="body2">
                 {props.year}
               </Typography>
-            </React.Fragment>    
+            </Fragment>    
           }
         />
       </ListItem>

@@ -14,11 +14,21 @@ const styles = theme => ({
   nav: {
     justifyContent: 'center'
   },
-  icon: {
-    textAlign: 'right'
+  email: {
+    textAlign: 'right',
+    marginLeft: -30,
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: 0
+    }
   },
   link: {
     color: '#fff', 
+  },
+  github: {
+    textAlign: 'right',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'left'
+    }
   }
 });
 
@@ -33,12 +43,12 @@ const Footer = (props) => {
             <Grid item xs>
               &#169;&nbsp;&nbsp;Ewen Earle
             </Grid>
-            <Grid item xs = {1} className={classes.icon}>
+            <Grid item xs = {1} className={classes.github}>
               <a href="https://github.com/ewenearle" target="_blank" className={classes.link}>
                 <GitHubIcon/>
               </a>                  
             </Grid>
-            <Grid item xs = {1} className={classes.icon}>
+            <Grid item xs = {1} className={classes.email}>
               <a href="mailto:ewen_earle@hotmail.com" target="_top" className={classes.link}>
                 <Email />
               </a>

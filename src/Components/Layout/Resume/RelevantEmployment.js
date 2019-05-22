@@ -55,6 +55,7 @@ const RelevantEmployment = (props) => {
           <List>
 
             {/* Pull required data from JSON file */}
+            
             {computerJobs.map((job, index) => {
               return (
                 <Job title = {job.title} location = {job.location} year = {job.year} class = {classes} key = {index} />
@@ -73,6 +74,7 @@ const RelevantEmployment = (props) => {
             </ListItem> 
 
             {/* Pull required data from JSON file */}
+
             {computerTasks.map((task, index) => {
               return (
                 <Task description = {task.description} class = {classes} key = {index} />

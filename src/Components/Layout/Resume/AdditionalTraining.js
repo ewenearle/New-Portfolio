@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
 import Course from './Templates/Training';
-import ResumeData from './resume.json'
+import ResumeData from './resume.json';
 
 const styles = theme => ({
   main: {
@@ -43,6 +43,7 @@ const AdditionalTraining = (props) => {
         </Grid>
          
         {/* Pull required data from JSON file */}
+        
         { otherTraining.map((course, index) => {    
           return (
             <Course name={course.name}

@@ -2,8 +2,8 @@
 
 ## Introduction
 
-* Created with React and Material UI (CSS Framework)
-* Upcoming sections (Projects, About)
+* Created with React and Material-UI
+* Upcoming sections (Projects, About, Contact Form)
 
 ## Install
 

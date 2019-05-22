@@ -36,7 +36,7 @@ const styles = theme => ({
       marginTop: -10
     }
   }
-})
+});
 
 const AdditionalEmployment = (props) => {
   const { classes } = props;
@@ -53,6 +53,7 @@ const AdditionalEmployment = (props) => {
           <List>
 
             {/* Pull required data from JSON file */}
+
             {constructionJobs.map((job, index) => {
               return (
                 <Job title = {job.title}
@@ -75,6 +76,7 @@ const AdditionalEmployment = (props) => {
             </ListItem>
 
             {/* Pull required data from JSON file */}
+
             {constructionTasks.map((task, index) => {
               return (
                 <Task description = {task.description} class = {classes} key = {index} />
@@ -84,7 +86,8 @@ const AdditionalEmployment = (props) => {
           </List>
         </Grid>
 
-        {/* Other employment that didn't logically fit in the JSON file */}
+        {/* Other employment data that didn't logically fit in the JSON file */}
+
         <Grid item xs={12}>
           <Divider />
         </Grid>

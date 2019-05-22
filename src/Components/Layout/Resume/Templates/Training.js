@@ -17,7 +17,7 @@ function Training(props){
               <School className={icon}/>
             </ListItemIcon>
               <ListItemText primary={
-                <React.Fragment>
+                <Fragment>
                   <Typography variant="body1" className={school}>
                     {props.name}
                   </Typography>
@@ -30,7 +30,7 @@ function Training(props){
                   <Typography variant="body2">
                     {props.year}
                   </Typography>
-                </React.Fragment>    
+                </Fragment>    
               }
             />
           </ListItem>
