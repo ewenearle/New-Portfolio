@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import React, { Component, Fragment} from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { withStyles } from '@material-ui/core/styles';
+import Header from './Layout/Header'
+import Footer from './Layout/Footer'
+import Home from './Layout/Home';
+import CoverLetter from './Layout/Resume/CoverLetter';
 import Resume from './Layout/Resume';
 import NotFound from './Layout/NotFound';
-import { withStyles } from '@material-ui/core/styles';
+// import Projects from './Layout/Projects';
+// import About from './Layout/About';
 
-/* import Header from './Layout/Header' */
 
 const styles = theme => ({
   layout: { 
@@ -19,25 +24,30 @@ const styles = theme => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '100%',
-      marginTop: 0
+      marginTop: 0,
+      marginBottom: 0
     },
     backgroundColor: '#595959',
     boxShadow: '0 3px 55px 8px grey'  
   } 
 });
 
-
 class App extends Component {
   render() { 
+    
     return (
       <div className={this.props.classes.layout}>
         <BrowserRouter>
-          {/* <Header /> */}
-          <Switch>
-            <Route exact path='/resume' render={() =>  <Redirect to='/' />}/>  
-            <Route exact path="/" component={Resume} />
-            <Route component = {NotFound} />
+          <Header />
+          <Switch> 
+            <Route path='/' exact component={Home} />
+            <Route path='/coverletter' component={CoverLetter} />
+            <Route path='/resume' component={Resume} />
+            {/* <Route path='/projects' component={Projects} />
+            <Route path='/about' component={About} /> */}
+            <Route component={NotFound} />
           </Switch>
+          <Footer />
         </BrowserRouter>   
       </div>  
     )  
