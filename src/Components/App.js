@@ -7,7 +7,7 @@ import Home from './Layout/Home';
 import CoverLetter from './Layout/Resume/CoverLetter';
 import Resume from './Layout/Resume';
 import NotFound from './Layout/NotFound';
-import Projects from './Layout/Projects';
+// import Projects from './Layout/Projects';
 // import About from './Layout/About';
 
 
@@ -43,7 +43,7 @@ class App extends Component {
             <Route path='/' exact component={Home} />
             <Route path='/coverletter' component={CoverLetter} />
             <Route path='/resume' component={Resume} />
-            <Route path='/projects' component={Projects} />
+            {/* <Route path='/projects' component={Projects} /> */}
             {/* <Route path='/about' component={About} /> */}
             <Route component={NotFound} />
           </Switch>

@@ -93,7 +93,7 @@ class NavBar extends Component {
             <ListItem component={NavLink} to="/" button divider> Home </ListItem>
             <ListItem component={NavLink} to="/coverletter" button divider> Cover Letter </ListItem>
             <ListItem component={NavLink} to="/resume" button divider> Resume </ListItem>
-            <ListItem component={NavLink} to="/projects" button divider> Projects </ListItem>
+            {/* <ListItem component={NavLink} to="/projects" button divider> Projects </ListItem> */}
             {/* <ListItem component={NavLink} to="/about" button divider> About Me </ListItem> */}
           </List>
 
@@ -119,9 +119,9 @@ class NavBar extends Component {
               <Button component={NavLink} to="/resume" className={button} activeClassName={active} disableRipple>
                 Resume
               </Button> 
-              <Button component={NavLink} to="/projects" className={button} activeClassName={active} disableRipple>
+              {/* <Button component={NavLink} to="/projects" className={button} activeClassName={active} disableRipple>
                 Projects
-              </Button>
+              </Button> */}
               {/* <Button component={NavLink} to="/about" className={button} activeClassName={active} disableRipple>
                 About Me
               </Button> */}
