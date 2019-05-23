@@ -16,7 +16,7 @@ const styles = theme => ({
   },
   email: {
     textAlign: 'right',
-    marginLeft: -30,
+    marginLeft: -8,
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0
     }
@@ -45,7 +45,7 @@ const Footer = (props) => {
             </Grid>
             <Grid item xs = {1} className={classes.github}>
               <a href="https://github.com/ewenearle" target="_blank" className={classes.link}>
-                <GitHubIcon/>
+                <GitHubIcon />
               </a>                  
             </Grid>
             <Grid item xs = {1} className={classes.email}>

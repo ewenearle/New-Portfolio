@@ -5,15 +5,13 @@ import Lens from '@material-ui/icons/Lens';
 const styles = theme => ({
   main: {
     flexGrow: 1,
-    backgroundColor: '#333e42',
-    color: 'white',
+    backgroundColor: '#333e42'
   },
   title: {
     textAlign: 'center',
     marginTop: 20,
     marginBottom: 10,
     fontWeight: 'bold',
-    
   },
   address:{
     textAlign: 'center',
@@ -28,8 +26,7 @@ const styles = theme => ({
     color: '#fff',
     width: 7,
     height: 7
-  },
-
+  }
 });
 
 const CoverLetter = (props) => {

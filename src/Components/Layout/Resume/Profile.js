@@ -105,18 +105,21 @@ const Profile = (props) => {
                 </ListItemIcon>
                 St. John's, NL A1A 5G8
               </ListItem>
+
               <ListItem >
                 <ListItemIcon >
                   <Phone className={classes.icon}/>
                 </ListItemIcon>
                 (709) 765-0385
-              </ListItem> 
+              </ListItem>
+
               <ListItem>
                 <ListItemIcon>
                   <Email className={classes.icon}/>
                 </ListItemIcon>
                 <a href="mailto:ewen_earle@hotmail.com" target="_top" className={classes.link}>ewen_earle@hotmail.com</a>
               </ListItem> 
+              
               <ListItem>
                 <ListItemIcon>
                   <GitHubIcon />

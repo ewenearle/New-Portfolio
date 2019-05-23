@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react';
-import { Grid, withStyles, Link, Typography } from '@material-ui/core';
+import { Grid, withStyles, Link, Typography, Card, CardHeader, CardMedia, CardContent } from '@material-ui/core';
+import project1 from '../../images/test2.png'
 
 const styles = theme => ({
   main: {
     flexGrow: 1,
-    backgroundColor: '#333e42',
-    color: 'white',
-    
-    "fontFamily": "\"Merriweather Sans\", sans-serif"
+    backgroundColor: '#333e42', 
   },
   title: {
     textAlign: 'center',
@@ -25,7 +23,18 @@ const styles = theme => ({
       textDecoration: "none",
    }
   },
-  
+  card: {
+    maxWidth: 400,
+    backgroundColor: '#f7f7f7'
+  },
+  media: {
+    height: 0,
+    paddingTop: '50%',
+    margin: 5
+  },
+  test: {
+    color: 'black'
+  }
 });
 
 const Projects = (props) => {
@@ -34,8 +43,20 @@ const Projects = (props) => {
     <Fragment >
       <Grid container spacing={16} className={classes.main}>
         <Grid item xs={12} className={classes.title}>
-         
-          <h1>Projects</h1>
+        <Card className={classes.card}>
+          
+          <CardMedia
+          className={classes.media}
+          image={project1}
+          title="Project1"
+          />
+        <CardContent>
+          <Typography style={{color: 'black'}}>
+            This impressive paella is a perfect party dish and a fun meal to cook together with your
+            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+          </Typography>
+        </CardContent>
+        </Card>
           
         </Grid>
       </Grid>
