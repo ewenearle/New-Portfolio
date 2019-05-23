@@ -21,7 +21,7 @@ const styles = theme => ({
     color: '#fff'
   },
   school:{
-    fontWeight: 'bold'
+    fontWeight: 600,
   },
   responsiveSchool:{
     [theme.breakpoints.down('xs')]: {

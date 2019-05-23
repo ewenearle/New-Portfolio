@@ -24,7 +24,7 @@ const styles = theme => ({
   profile: {
     marginLeft: 20,
     lineHeight: '1.5',
-    "fontFamily": "\"Work Sans\", sans-serif",
+    "fontFamily": "\"Merriweather Sans\", sans-serif"
   },
   profileTitle: { 
     textAlign: 'center',

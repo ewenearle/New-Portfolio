@@ -7,33 +7,34 @@ const styles = theme => ({
     flexGrow: 1,
     backgroundColor: '#333e42',
     color: 'white',
-    "fontFamily": "\"Merriweather Sans\", sans-serif"
   },
   title: {
     textAlign: 'center',
     marginTop: 20,
-    marginBottom: 5,
-    fontWeight: 'bold'
+    marginBottom: 10,
+    fontWeight: 'bold',
+    
   },
   address:{
     textAlign: 'center',
     marginBottom: 15,
     marginLeft: 10,
-    marginRight: 10
+    marginRight: 10,
   },
   body:{
-    margin: 25
+    margin: 25,
   },
   bullet: {
     color: '#fff',
     width: 7,
     height: 7
   },
+
 });
 
 const CoverLetter = (props) => {
 
-  const { main, title, address, body, bullet } = props.classes;
+  const { main, title, address, body, bullet, list } = props.classes;
 
   return (
     <Fragment>
