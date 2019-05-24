@@ -1,0 +1,4 @@
+<Typography variant="body1" className={body} style={{marginTop: 0}}>
+            May 23rd, 2019<br/>Mysa<br/> <span style={{fontWeight:'bold'}}>Re: Junior Full Stack Developer in St John’s, NL
+</span>
+          </Typography>

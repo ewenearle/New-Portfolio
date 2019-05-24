@@ -1,13 +1,14 @@
-import React, { Component, Fragment} from 'react';
+import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import Header from './Layout/Header'
-import Footer from './Layout/Footer'
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
 import Home from './Layout/Home';
-import CoverLetter from './Layout/Resume/CoverLetter';
+import Portfolio from './Layout/Portfolio';
 import Resume from './Layout/Resume';
 import NotFound from './Layout/NotFound';
-import Projects from './Layout/Projects';
+
+// import CoverLetter from './Layout/Resume/CoverLetter';
 // import About from './Layout/About';
 
 
@@ -29,7 +30,7 @@ const styles = theme => ({
     },
     backgroundColor: '#595959',
     boxShadow: '0 3px 55px 8px grey'  
-  } 
+  }
 });
 
 class App extends Component {
@@ -41,9 +42,10 @@ class App extends Component {
           <Header />
           <Switch> 
             <Route path='/' exact component={Home} />
-            <Route path='/coverletter' component={CoverLetter} />
+            <Route path='/portfolio' component={Portfolio} />
             <Route path='/resume' component={Resume} />
-            <Route path='/projects' component={Projects} />
+
+            {/* <Route path='/coverletter' component={CoverLetter} /> */}
             {/* <Route path='/about' component={About} /> */}
             <Route component={NotFound} />
           </Switch>

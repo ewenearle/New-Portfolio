@@ -2,12 +2,11 @@ import React, { Fragment } from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
 import Course from './Templates/Education';
 import ResumeData from './resume.json';
+import layout from '../../../styles/SharedStyles.js';
 
 const styles = theme => ({
   main: {
-    flexGrow: 1,
     backgroundColor: '#3d6a7a',
-    color: '#fff'
   },
   title: {
     marginTop: 20,
@@ -47,10 +46,11 @@ const styles = theme => ({
 const RelevantEducation = (props) => {
   const { classes } = props;
   const { courses } = ResumeData;
-  
+  console.log(layout.main)
+  // 
   return (
     <Fragment>
-      <Grid container spacing={16} className={classes.main}>
+      <Grid container spacing={16} style={layout.main}>
         <Grid item xs={12}>
           <Typography className ={classes.title} variant="h6" gutterBottom>
             Relevant Education and Training

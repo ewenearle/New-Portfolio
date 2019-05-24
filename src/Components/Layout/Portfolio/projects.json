@@ -1,0 +1,33 @@
+{
+  "projects": [ 
+    {
+      "title": "Course Database",
+      "description": "Made with React and MongoDB. Users can create, update and delete courses once they are logged in."
+    },
+      
+    {
+      "title": "Library Manager",
+      "description": "Made with SQLite and Express. Users can create, update and delete books."
+    },
+    
+    {
+      "title": "Gallery Application",
+      "description": "Made with React. Connects to an API to load pictures based on search."
+    },
+    
+    {
+      "title": "Employee Directory",
+      "description": "Made with Vanilla Javascript. Uses Fetch API to load fake employee data."
+    },
+    
+    {
+      "title": "Phrase Hunter",
+      "description": "Word guessing game created using object-oriented JavaScript."
+    },
+
+    {
+      "title": "Interactive Form",
+      "description": "Made with JQuery. An interactive registration form for a fictional conference."
+    }
+  ]
+}

@@ -4,19 +4,9 @@ import GitHubIcon from './GitHubIcon.js'
 import Email from '@material-ui/icons/Email';
 
 const styles = theme => ({
-  button: {
-    margin: theme.spacing.unit * 2,
-    color: 'white',
-    '&:hover': {
-      background: '#233237'
-   },  
-  },
-  nav: {
-    justifyContent: 'center'
-  },
   email: {
     textAlign: 'right',
-    marginLeft: -30,
+    marginLeft: -8,
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0
     }
@@ -58,7 +48,7 @@ const Footer = (props) => {
       </Grid>
     </Fragment>
   );
-}
+};
 
 
 export default withStyles(styles)(Footer);

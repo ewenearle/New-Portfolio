@@ -8,7 +8,6 @@ import GitHubIcon from '../GitHubIcon.js';
 
 const styles = theme => ({
   main: {
-    flexGrow: 1,
     backgroundColor: '#333e42',
     color: 'white',
     marginBottom: 5
@@ -84,7 +83,7 @@ const Profile = (props) => {
         <Grid item xs>
           <Grid item className={classes.profile}>
             <Typography className={classes.profileTitle} variant="h6" gutterBottom>Profile</Typography>
-            Junior Web Developer who is passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user's needs. Tenacious, creative, and self-disciplined offering 13+ years of experience in IT, construction, and military environments.
+            Junior Web Developer who is passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user's needs. Tenacious, creative,and self-disciplined offering 13+ years of experience in IT, construction, and military environments.
           </Grid>
         </Grid>
 

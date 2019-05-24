@@ -6,9 +6,7 @@ import ResumeData from './resume.json';
 
 const styles = theme => ({
   main: {
-    flexGrow: 1,
     backgroundColor: '#333e42',
-    color: '#fff'
   },
   title: {
     marginTop: 20,
