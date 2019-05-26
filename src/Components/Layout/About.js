@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Grid, withStyles, Link, Typography } from '@material-ui/core';
 
 const styles = theme => ({
@@ -31,15 +31,15 @@ const styles = theme => ({
 const About = (props) => {
   const { classes } = props;
   return (
-    <Fragment >
-      <Grid container spacing={16} className={classes.main}>
-        <Grid item xs={12} className={classes.title}>
-         
-          <h1>About Me</h1>
-          
-        </Grid>
+   
+    <Grid container spacing={16} className={classes.main}>
+      <Grid item xs={12} className={classes.title}>
+        
+        <h1>About Me</h1>
+        
       </Grid>
-    </Fragment>
+    </Grid>
+   
   );
 };
 

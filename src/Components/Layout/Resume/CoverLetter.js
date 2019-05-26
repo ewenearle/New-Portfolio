@@ -11,7 +11,7 @@ const styles = theme => ({
     textAlign: 'center',
     marginTop: 20,
     marginBottom: 10,
-    fontWeight: 'bold',
+    fontWeight: 'bold',  
   },
   address:{
     textAlign: 'center',
@@ -20,7 +20,10 @@ const styles = theme => ({
     marginRight: 10,
   },
   body:{
-    margin: 25,
+    marginLeft: 25,
+    marginRight: 25,
+    marginTop: 15,
+    marginBottom: 15
   },
   bullet: {
     color: '#fff',
@@ -40,15 +43,18 @@ const CoverLetter = (props) => {
           <Typography variant="h4" className={title}>
             Ewen Earle
           </Typography>
-    
           <Typography variant="subtitle2" className={address} gutterBottom>
             40 Eastbourne Crescent, St. John's, NL A1A 5G8&nbsp;|&nbsp;Cell: (709) 765-0385&nbsp;|&nbsp;ewen_earle@hotmail.com
           </Typography>
         </Grid>
-
+        
         <Grid item xs={12} >
+          <Typography variant="body1" className={body} style={{marginTop: 0}}>
+            'Date'<br/>'Company'<br/> <span style={{fontWeight:'bold'}}>'Re: Position'</span>
+          </Typography> 
           <Typography variant="body1" className={body}>
-            <span style={{fontWeight:'bold'}}>To the Hiring Manager,</span> <br /><br />This letter is in response to your advertisement for the position of Junior Full Stack Developer. In the header, you will find a link to my resume. I am the ideal Candidate for the following reasons:
+            To the Hiring Manager, <br /><br />This letter is in response to your advertisement for the position of 
+            'position'. Attached is my resume for consideration. I am the ideal Candidate for the following reasons:
           </Typography>
 
           <List className={body}>
@@ -66,7 +72,7 @@ const CoverLetter = (props) => {
                 <Lens className={bullet}/>
               </ListItemIcon>
               <Typography variant="body1">
-                Comfortable working with server side technologies such as Node.js and the Express framework, while using MongoDB as a database;
+                Comfortable working with server side technologies such as Node.js and the Express framework, while using MongoDB and SQLite as a database;
               </Typography>
             </ListItem>
 

@@ -13,15 +13,6 @@ const theme = createMuiTheme({
     primary: {
       main: '#1a1a1a'
     },
-    secondary: {
-      main: '#3c555d',
-    },
-    spacing: {
-      unit: 10
-    },
-    background: {
-      default: "#ebeaed",
-    }
   },
   typography: {
     useNextVariants: true,

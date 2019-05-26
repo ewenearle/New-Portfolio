@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Typography, Grid, Avatar, withStyles, List, ListItem, ListItemIcon } from '@material-ui/core';
 import ProfilePicture from '../../../images/profile.jpg';
 import Email from '@material-ui/icons/Email';
@@ -8,7 +8,6 @@ import GitHubIcon from '../GitHubIcon.js';
 
 const styles = theme => ({
   main: {
-    flexGrow: 1,
     backgroundColor: '#333e42',
     color: 'white',
     marginBottom: 5
@@ -73,64 +72,61 @@ const styles = theme => ({
 const Profile = (props) => {
   const { classes } = props;
   return (
-    <Fragment>
-      <Grid container spacing={16} className={classes.main}>
-        
-        <Grid item xs={12} className={classes.title}>
-          <h1 style={{fontSize: 35}}>Ewen Earle</h1>
-          <h2 className={classes.jobTitle}>Full Stack Web Developer</h2>
-        </Grid>
-
-        <Grid item xs>
-          <Grid item className={classes.profile}>
-            <Typography className={classes.profileTitle} variant="h6" gutterBottom>Profile</Typography>
-            Junior Web Developer who is passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user's needs. Tenacious, creative, and self-disciplined offering 13+ years of experience in IT, construction, and military environments.
-          </Grid>
-        </Grid>
-
-        <Grid item xs={12} md={3}>
-          <Avatar alt="Ewen Earle" src={ProfilePicture} className={classes.avatar} />
-        </Grid>
-
-        <Grid item xs className={classes.contact}>
-          <Grid item style={{display: 'inline-block'}}> 
-            <Typography className={classes.about} variant="h6" gutterBottom>
-              Personal Info
-            </Typography>
-
-            <List>
-              <ListItem>
-                <ListItemIcon >
-                  <Home className={classes.icon}/>
-                </ListItemIcon>
-                St. John's, NL A1A 5G8
-              </ListItem>
-
-              <ListItem >
-                <ListItemIcon >
-                  <Phone className={classes.icon}/>
-                </ListItemIcon>
-                (709) 765-0385
-              </ListItem>
-
-              <ListItem>
-                <ListItemIcon>
-                  <Email className={classes.icon}/>
-                </ListItemIcon>
-                <a href="mailto:ewen_earle@hotmail.com" target="_top" className={classes.link}>ewen_earle@hotmail.com</a>
-              </ListItem> 
-              
-              <ListItem>
-                <ListItemIcon>
-                  <GitHubIcon />
-                </ListItemIcon>
-                  <a href="https://github.com/ewenearle" target="_blank" className={classes.link}>https://github.com/ewenearle</a>
-              </ListItem>   
-            </List>
-          </Grid>
-        </Grid>    
+    
+    <Grid container spacing={16} className={classes.main}>
+      
+      <Grid item xs={12} className={classes.title}>
+        <h1 style={{fontSize: 35}}>Ewen Earle</h1>
+        <h2 className={classes.jobTitle}>Full Stack Web Developer</h2>
       </Grid>
-    </Fragment>
+
+      <Grid item xs>
+        <Grid item className={classes.profile}>
+          <Typography className={classes.profileTitle} variant="h6" gutterBottom>Profile</Typography>
+          Junior Web Developer who is passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user's needs. Tenacious, creative,and self-disciplined offering 13+ years of experience in IT, construction, and military environments.
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} md={3}>
+        <Avatar alt="Ewen Earle" src={ProfilePicture} className={classes.avatar} />
+      </Grid>
+
+      <Grid item xs className={classes.contact}>
+        <Grid item style={{display: 'inline-block'}}> 
+          <Typography className={classes.about} variant="h6" gutterBottom>
+            Personal Info
+          </Typography>
+
+          <List>
+            <ListItem>
+              <ListItemIcon >
+                <Home className={classes.icon}/>
+              </ListItemIcon>
+              St. John's, NL A1A 5G8
+            </ListItem>
+            <ListItem >
+              <ListItemIcon >
+                <Phone className={classes.icon}/>
+              </ListItemIcon>
+              (709) 765-0385
+            </ListItem> 
+            <ListItem>
+              <ListItemIcon>
+                <Email className={classes.icon}/>
+              </ListItemIcon>
+              <a href="mailto:ewen_earle@hotmail.com" target="_top" className={classes.link}>ewen_earle@hotmail.com</a>
+            </ListItem> 
+            <ListItem>
+              <ListItemIcon>
+                <GitHubIcon />
+              </ListItemIcon>
+                <a href="https://github.com/ewenearle" target="_blank" className={classes.link}>https://github.com/ewenearle</a>
+            </ListItem>   
+          </List>
+        </Grid>
+      </Grid>    
+    </Grid>
+  
   );
 };
 

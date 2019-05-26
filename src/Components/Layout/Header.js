@@ -29,7 +29,6 @@ const styles = theme => ({
     justifyContent: 'center'
   },
   icon: {
-    
     cursor: 'pointer',
     '&:hover': {
       color: '#cecccc',
@@ -91,9 +90,10 @@ class NavBar extends Component {
             
           <List>
             <ListItem component={NavLink} to="/" button divider> Home </ListItem>
-            <ListItem component={NavLink} to="/coverletter" button divider> Cover Letter </ListItem>
+            <ListItem component={NavLink} to="/portfolio" button divider> Portfolio </ListItem>
             <ListItem component={NavLink} to="/resume" button divider> Resume </ListItem>
             {/* <ListItem component={NavLink} to="/projects" button divider> Projects </ListItem> */}
+            {/* <ListItem component={NavLink} to="/coverletter" button divider> Cover Letter </ListItem> */}
             {/* <ListItem component={NavLink} to="/about" button divider> About Me </ListItem> */}
           </List>
 
@@ -106,29 +106,29 @@ class NavBar extends Component {
   largeNavBar = () => {
     const { button, active, nav } = this.props.classes;
     return (
-      <Fragment>
-        <Grid container spacing={16}>
-          <AppBar position="static">
-            <Toolbar className={nav}>
-              <Button component={NavLink} exact to="/" className={button} activeClassName={active} disableRipple>
-                Home
-              </Button>
-              <Button component={NavLink} to="/coverletter" className={button} activeClassName={active} disableRipple>
-                Cover Letter
-              </Button>
-              <Button component={NavLink} to="/resume" className={button} activeClassName={active} disableRipple>
-                Resume
-              </Button> 
-              {/* <Button component={NavLink} to="/projects" className={button} activeClassName={active} disableRipple>
-                Projects
-              </Button> */}
-              {/* <Button component={NavLink} to="/about" className={button} activeClassName={active} disableRipple>
-                About Me
-              </Button> */}
-            </Toolbar>
-          </AppBar>
-        </Grid>
-      </Fragment>
+      
+      <Grid container spacing={16}>
+        <AppBar position="static">
+          <Toolbar className={nav}>
+            <Button component={NavLink} exact to="/" className={button} activeClassName={active} disableRipple>
+              Home
+            </Button>
+            <Button component={NavLink} to="/portfolio" className={button} activeClassName={active} disableRipple>
+              Portfolio
+            </Button>
+            <Button component={NavLink} to="/resume" className={button} activeClassName={active} disableRipple>
+              Resume
+            </Button>
+            {/* <Button component={NavLink} to="/coverletter" className={button} activeClassName={active} disableRipple>
+              Cover Letter
+            </Button> */}
+            {/* <Button component={NavLink} to="/about" className={button} activeClassName={active} disableRipple>
+              About Me
+            </Button> */}
+          </Toolbar>
+        </AppBar>
+      </Grid>
+   
     );
   };
 
@@ -140,6 +140,5 @@ class NavBar extends Component {
     )
   };
 };
-
 
 export default withStyles(styles)(NavBar);
