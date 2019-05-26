@@ -105,29 +105,29 @@ class NavBar extends Component {
   largeNavBar = () => {
     const { button, active, nav } = this.props.classes;
     return (
-      <Fragment>
-        <Grid container spacing={16}>
-          <AppBar position="static">
-            <Toolbar className={nav}>
-              <Button component={NavLink} exact to="/" className={button} activeClassName={active} disableRipple>
-                Home
-              </Button>
-              <Button component={NavLink} to="/portfolio" className={button} activeClassName={active} disableRipple>
-                Portfolio
-              </Button>
-              <Button component={NavLink} to="/resume" className={button} activeClassName={active} disableRipple>
-                Resume
-              </Button>
-              {/* <Button component={NavLink} to="/coverletter" className={button} activeClassName={active} disableRipple>
-                Cover Letter
-              </Button> */}
-              {/* <Button component={NavLink} to="/about" className={button} activeClassName={active} disableRipple>
-                About Me
-              </Button> */}
-            </Toolbar>
-          </AppBar>
-        </Grid>
-      </Fragment>
+      
+      <Grid container spacing={16}>
+        <AppBar position="static">
+          <Toolbar className={nav}>
+            <Button component={NavLink} exact to="/" className={button} activeClassName={active} disableRipple>
+              Home
+            </Button>
+            <Button component={NavLink} to="/portfolio" className={button} activeClassName={active} disableRipple>
+              Portfolio
+            </Button>
+            <Button component={NavLink} to="/resume" className={button} activeClassName={active} disableRipple>
+              Resume
+            </Button>
+            {/* <Button component={NavLink} to="/coverletter" className={button} activeClassName={active} disableRipple>
+              Cover Letter
+            </Button> */}
+            {/* <Button component={NavLink} to="/about" className={button} activeClassName={active} disableRipple>
+              About Me
+            </Button> */}
+          </Toolbar>
+        </AppBar>
+      </Grid>
+   
     );
   };
 
@@ -139,6 +139,5 @@ class NavBar extends Component {
     )
   };
 };
-
 
 export default withStyles(styles)(NavBar);

@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { Grid, withStyles, Link, Typography } from '@material-ui/core';
+import React from 'react';
+import { Grid, withStyles, Typography } from '@material-ui/core';
 import ProjectData from './projects.json'
 import Project from './template.js'
 
@@ -52,31 +52,31 @@ const Projects = (props) => {
   const { projects } = ProjectData
 
   return (
-    <Fragment>
-      <Grid container spacing={16} className={main}>
-        
-        <Grid item xs={12}>
-          <Typography className={mainTitle} variant="h4">
-            My Projects
-          </Typography>
-        </Grid>
 
-        {/* Pull required data from JSON file */}
-        
-        {projects.map((project, index) => {
-          console.log(index)
-          return (
-            <Project title={project.title}
-                     description={project.description}
-                     class={props.classes}
-                     image={require(`../../../images/project${index}.png`)}
-                     key={index}
-            />
-          )
-        })}
-
+    <Grid container spacing={16} className={main}>
+     
+      <Grid item xs={12}>
+        <Typography className={mainTitle} variant="h4">
+          My Projects
+        </Typography>
       </Grid>
-    </Fragment>
+
+      {/* Pull required data from JSON file */}
+      
+      {projects.map((project, index) => {
+        return (
+          <Project title={project.title}
+                    description={project.description}
+                    link={project.link}
+                    class={props.classes}
+                    image={require(`../../../images/project${index}.png`)}    
+                    key={index}
+          />
+        )
+      })}
+
+    </Grid>
+   
   );
 };
 

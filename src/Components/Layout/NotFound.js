@@ -2,9 +2,8 @@ import React, { Fragment } from 'react';
 import { Grid, withStyles, Link, Typography } from '@material-ui/core';
 import Error from '@material-ui/icons/Error'; 
 
-const styles = theme => ({
+const styles = {
   main: {
-    flexGrow: 1,
     backgroundColor: '#333e42',
     color: 'white',
     "fontFamily": "\"Merriweather Sans\", sans-serif"
@@ -26,7 +25,7 @@ const styles = theme => ({
       color: '#b2b0b0'
    }
   }
-});
+};
 
 const NotFound = (props) => {
   console.log(props.match.url)

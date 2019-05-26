@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
 import Course from './Templates/Education';
 import ResumeData from './resume.json';
@@ -46,33 +46,32 @@ const styles = theme => ({
 const RelevantEducation = (props) => {
   const { classes } = props;
   const { courses } = ResumeData;
-  console.log(layout.main)
-  // 
+  
   return (
-    <Fragment>
-      <Grid container spacing={16} style={layout.main}>
-        <Grid item xs={12}>
-          <Typography className ={classes.title} variant="h6" gutterBottom>
-            Relevant Education and Training
-          </Typography>
-        </Grid>
-        
-        {/* Pull required data from JSON file */}
-        
-        {courses.map((course, index) => {
-          return (
-            <Course school={course.name} 
-                year={course.year} 
-                course={course.course} 
-                topics={course.topics}
-                class={classes}
-                key={index}
-            />
-          )
-        })}
-
+ 
+    <Grid container spacing={16} className={classes.main}>
+      <Grid item xs={12}>
+        <Typography className ={classes.title} variant="h6" gutterBottom>
+          Relevant Education and Training
+        </Typography>
       </Grid>
-    </Fragment>
+      
+      {/* Pull required data from JSON file */}
+      
+      {courses.map((course, index) => {
+        return (
+          <Course school={course.name} 
+              year={course.year} 
+              course={course.course} 
+              topics={course.topics}
+              class={classes}
+              key={index}
+          />
+        )
+      })}
+
+    </Grid>
+    
   );
 };
 

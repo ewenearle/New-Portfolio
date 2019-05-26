@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Typography, Grid, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import School from '@material-ui/icons/School';
 
-function Education(props){
+const Education = (props) => {
   const { icon, school, responsiveSchool, responsiveCourse, responsiveTitle } = props.class;
 
   /* List items that are iterated and passed props from RelevantEducation.js  */

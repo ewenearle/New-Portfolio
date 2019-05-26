@@ -12,8 +12,7 @@ const styles = theme => ({
     textAlign: 'center',
     marginTop: 20,
     marginBottom: 10,
-    fontWeight: 'bold',
-    
+    fontWeight: 'bold',  
   },
   address:{
     textAlign: 'center',

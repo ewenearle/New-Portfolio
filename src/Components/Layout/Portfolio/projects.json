@@ -2,32 +2,38 @@
   "projects": [ 
     {
       "title": "Course Database",
-      "description": "Made with React and MongoDB. Users can create, update and delete courses once they are logged in."
+      "description": "MERN application with authentication. Users can create, update and delete courses once they are logged in.",
+      "link": "https://coursedirectory.herokuapp.com/"
     },
       
     {
       "title": "Library Manager",
-      "description": "Made with SQLite and Express. Users can create, update and delete books."
+      "description": "Made with SQLite and Express using Pug as a template engine. Users can create, update and delete books.",
+      "link": "https://book-manager-project.herokuapp.com/"
     },
     
     {
       "title": "Gallery Application",
-      "description": "Made with React. Connects to an API to load pictures based on search."
+      "description": "Made with React. Connects to an API to load pictures based on search.",
+      "link": "https://gallery-react-app.herokuapp.com/"
     },
     
     {
       "title": "Employee Directory",
-      "description": "Made with Vanilla Javascript. Uses Fetch API to load fake employee data."
+      "description": "Made with Vanilla Javascript. Uses Fetch API to load fake employee data.",
+      "link": "https://ewenearle.github.io/Employee-Directory/"
     },
     
     {
       "title": "Phrase Hunter",
-      "description": "Word guessing game created using object-oriented JavaScript."
+      "description": "Word guessing game created using object-oriented JavaScript.",
+      "link": "https://ewenearle.github.io/Phrase-Hunter/"
     },
 
     {
       "title": "Interactive Form",
-      "description": "Made with JQuery. An interactive registration form for a fictional conference."
+      "description": "Made with JQuery. An interactive registration form for a fictional conference.",
+      "link": "https://ewenearle.github.io/Interactive-Form/"
     }
   ]
 }

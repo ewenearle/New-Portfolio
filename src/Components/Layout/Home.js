@@ -5,7 +5,6 @@ import Flag from '../../images/flag.png';
 
 const styles = theme => ({
   main: {
-    flexGrow: 1,
     backgroundColor: '#333e42'
   },
   welcome: {
@@ -44,7 +43,7 @@ const Home = (props) => {
               Hello, my name is <span style={{color: '#c64335'}}> Ewen Earle</span>
           </Typography>  
           <Typography variant="h5" gutterBottom style={{marginTop: '1em'}} className={welcome}>
-              I'm a Web Developer from St. John's, Newfoundland        
+              I'm a full-stack web developer from St. John's, Newfoundland        
           </Typography>   
           <Typography variant="h5" gutterBottom className={flag}>
               <img src = {Flag} />
