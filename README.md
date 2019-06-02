@@ -3,7 +3,6 @@
 ## Introduction
 
 * Created with React and Material-UI
-* Upcoming sections (Projects, About, Contact Form)
 
 ## Install
 
