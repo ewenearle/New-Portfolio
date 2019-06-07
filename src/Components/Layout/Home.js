@@ -40,7 +40,7 @@ const Home = (props) => {
       <Grid container spacing={16} className={main}>      
         <Grid item xs={12} className={background}>
           <Typography variant="h3" gutterBottom className={welcome}>
-              Hello, my name is <span style={{color: '#c64335'}}> Ewen Earle</span>
+              Welcome, my name is <span style={{color: '#c64335'}}> Ewen Earle</span>
           </Typography>  
           <Typography variant="h5" gutterBottom style={{marginTop: '1em'}} className={welcome}>
               I'm a full-stack web developer from St. John's, Newfoundland        

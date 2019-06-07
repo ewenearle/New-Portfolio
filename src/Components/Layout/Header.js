@@ -92,9 +92,7 @@ class NavBar extends Component {
             <ListItem component={NavLink} to="/" button divider> Home </ListItem>
             <ListItem component={NavLink} to="/portfolio" button divider> Portfolio </ListItem>
             <ListItem component={NavLink} to="/resume" button divider> Resume </ListItem>
-            {/* <ListItem component={NavLink} to="/projects" button divider> Projects </ListItem> */}
             {/* <ListItem component={NavLink} to="/coverletter" button divider> Cover Letter </ListItem> */}
-            {/* <ListItem component={NavLink} to="/about" button divider> About Me </ListItem> */}
           </List>
 
          </div>
@@ -122,9 +120,7 @@ class NavBar extends Component {
             {/* <Button component={NavLink} to="/coverletter" className={button} activeClassName={active} disableRipple>
               Cover Letter
             </Button> */}
-            {/* <Button component={NavLink} to="/about" className={button} activeClassName={active} disableRipple>
-              About Me
-            </Button> */}
+           
           </Toolbar>
         </AppBar>
       </Grid>

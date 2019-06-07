@@ -50,11 +50,11 @@ const CoverLetter = (props) => {
         
         <Grid item xs={12} >
           <Typography variant="body1" className={body} style={{marginTop: 0}}>
-            'Date'<br/>'Company'<br/> <span style={{fontWeight:'bold'}}>'Re: Position'</span>
+            June 6th, 2019<br/>Eastern Health<br/> <span style={{fontWeight:'bold'}}>Communications/Web Content Coordinator</span>
           </Typography> 
           <Typography variant="body1" className={body}>
             To the Hiring Manager, <br /><br />This letter is in response to your advertisement for the position of 
-            'position'. Attached is my resume for consideration. I am the ideal Candidate for the following reasons:
+            Communications/Web Content Coordinator. Attached is my resume for consideration. I am the ideal Candidate for the following reasons:
           </Typography>
 
           <List className={body}>
@@ -63,7 +63,7 @@ const CoverLetter = (props) => {
                 <Lens className={bullet} /> 
               </ListItemIcon>
               <Typography variant="body1">
-                Knowledgeable in CSS3, HTML5, JavaScript (ES6+) and ReactJS using Context API for state management;
+                Knowledgeable in CSS3, HTML5, JavaScript (ES6+), jQuery, Visual Studio.net and ReactJS using Context API for state management;
               </Typography>
             </ListItem>
 
@@ -72,7 +72,7 @@ const CoverLetter = (props) => {
                 <Lens className={bullet}/>
               </ListItemIcon>
               <Typography variant="body1">
-                Comfortable working with server side technologies such as Node.js and the Express framework, while using MongoDB and SQLite as a database;
+                Comfortable working with server side technologies such as Node.js and the Express framework, while using MongoDB, and PostgreSQL as a database;
               </Typography>
             </ListItem>
 

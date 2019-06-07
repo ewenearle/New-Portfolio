@@ -21,8 +21,8 @@ const styles = theme => ({
     maxWidth: 400,
     backgroundColor: '#f7f7f7',
     display: 'inline-block',
-    [theme.breakpoints.down('xs')]: {
-      maxWidth: 350
+    [theme.breakpoints.down('md')]: {
+      maxWidth: 310
     },
   },
   image: {

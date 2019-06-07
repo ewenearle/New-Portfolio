@@ -8,12 +8,13 @@ import Portfolio from './Layout/Portfolio';
 import Resume from './Layout/Resume';
 import NotFound from './Layout/NotFound';
 
-// import CoverLetter from './Layout/Resume/CoverLetter';
+import CoverLetter from './Layout/Resume/CoverLetter';
 // import About from './Layout/About';
 
 
 const styles = theme => ({
   layout: { 
+    overflow: 'hidden',
     marginTop: 30,
     marginBottom: 20, 
     marginRight: 10,
@@ -44,10 +45,8 @@ class App extends Component {
             <Route path='/' exact component={Home} />
             <Route path='/portfolio' component={Portfolio} />
             <Route path='/resume' component={Resume} />
-            {/* <Route path='/projects' component={Projects} /> */}
-
             {/* <Route path='/coverletter' component={CoverLetter} /> */}
-            {/* <Route path='/about' component={About} /> */}
+          
             <Route component={NotFound} />
           </Switch>
           <Footer />
