@@ -7,10 +7,7 @@ import Home from './Layout/Home';
 import Portfolio from './Layout/Portfolio';
 import Resume from './Layout/Resume';
 import NotFound from './Layout/NotFound';
-
-import CoverLetter from './Layout/Resume/CoverLetter';
-// import About from './Layout/About';
-
+// import CoverLetter from './Layout/Resume/CoverLetter';
 
 const styles = theme => ({
   layout: { 
@@ -36,7 +33,6 @@ const styles = theme => ({
 
 class App extends Component {
   render() { 
-    
     return (
       <div className={this.props.classes.layout}>
         <BrowserRouter>
@@ -46,7 +42,6 @@ class App extends Component {
             <Route path='/portfolio' component={Portfolio} />
             <Route path='/resume' component={Resume} />
             {/* <Route path='/coverletter' component={CoverLetter} /> */}
-          
             <Route component={NotFound} />
           </Switch>
           <Footer />

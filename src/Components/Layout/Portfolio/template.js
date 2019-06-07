@@ -5,7 +5,6 @@ const Projects = (props) => {
   const {project, card, image, courseTitle, description } = props.class
   
   return (
-    
     <Grid item xs={6} className={project}>
       <Card className={card}>  
         <CardActionArea component="a" href={props.link} target="_blank">
