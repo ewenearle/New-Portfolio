@@ -1,8 +1,7 @@
 import React from 'react'
-import { Typography, Grid, withStyles, List, ListItem, Divider } from '@material-ui/core';
+import { Typography, Grid, withStyles, List } from '@material-ui/core';
 import Job from './Templates/Employment';
 import Task from './Templates/Tasks';
-import ResumeData from './resume.json'
 
 const styles = theme => ({
   main: {
@@ -38,7 +37,7 @@ const styles = theme => ({
 
 const AdditionalEmployment = (props) => {
   const { classes } = props;
-  const { constructionJobs, constructionTasks } = ResumeData;
+  
   return (
     
     <Grid container spacing={16} className={classes.main}>
@@ -47,48 +46,24 @@ const AdditionalEmployment = (props) => {
           Additional Employment Experience
         </Typography>
       </Grid>
-      <Grid item xs={6} className={classes.responsiveGrid}>
+     
+      <Grid item xs={6} className={classes.responsiveGrid}>   
         <List>
-
-          {/* Pull required data from JSON file */}
-
-          {constructionJobs.map((job, index) => {
-            return (
-              <Job title = {job.title}
-                location = {job.location}
-                year = {job.year}
+          <Job jobTitle = "Scaffolder"
+                location = "Carpenters Union, Paradise, NL"
+                year = "2012 - 2018"
                 class = {classes}
-                key = {index}
-              />
-            )
-          })}
-
-        </List>  
-      </Grid>
-      <Grid item xs={6} className={classes.responsiveGrid}>
-        <List>         
-          <ListItem>        
-            <Typography variant="body1" className={classes.school}>
-              Responsibilities:
-            </Typography>
-          </ListItem>
-
-          {/* Pull required data from JSON file */}
-
-          {constructionTasks.map((task, index) => {
-            return (
-              <Task description = {task.description} class = {classes} key = {index} />
-            )
-          })}
-          
+          />
         </List>
       </Grid>
 
-      {/* Other employment data that didn't logically fit in the JSON file */}
+      <Grid item xs={6} className={classes.responsiveGrid}>        
+        <List>
+          <Task description = "Foreman for maintenance of Holyrood Electric Generating Station" class = {classes} />
+          <Task description = "Trained work term students on erecting scaffolds" class = {classes} />
+        </List>
+      </Grid> 
 
-      <Grid item xs={12}>
-        <Divider />
-      </Grid>
       <Grid item xs={6} className={classes.responsiveGrid}>   
         <List>
           <Job jobTitle = "Water, Fuels, Environment Technician"
@@ -98,6 +73,7 @@ const AdditionalEmployment = (props) => {
           />
         </List>
       </Grid>
+
       <Grid item xs={6} className={classes.responsiveGrid}>        
         <List>
           <Task description = "Operated water and wastewater treatment facilities" class = {classes} />

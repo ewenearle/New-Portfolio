@@ -18,7 +18,7 @@ const styles = theme => ({
   },
   jobTitle: {
     "fontFamily": "\"Work Sans\", sans-serif",
-    fontSize: 20,  
+    fontSize: 30,  
   },
   profile: {
     marginLeft: 20,
@@ -77,13 +77,13 @@ const Profile = (props) => {
       
       <Grid item xs={12} className={classes.title}>
         <h1 style={{fontSize: 35}}>Ewen Earle</h1>
-        <h2 className={classes.jobTitle}>Full Stack Web Developer</h2>
+        <h2 className={classes.jobTitle}>Developer</h2>
       </Grid>
 
       <Grid item xs>
         <Grid item className={classes.profile}>
           <Typography className={classes.profileTitle} variant="h6" gutterBottom>Profile</Typography>
-          Junior Web Developer who is passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user's needs. Tenacious, creative,and self-disciplined offering 13+ years of experience in IT, construction, and military environments.
+          Passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user's needs. Tenacious, creative, and self-disciplined offering 13+ years of experience in IT, construction, and military environments.
         </Grid>
       </Grid>
 

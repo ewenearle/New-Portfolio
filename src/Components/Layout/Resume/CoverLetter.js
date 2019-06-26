@@ -50,11 +50,11 @@ const CoverLetter = (props) => {
         
         <Grid item xs={12} >
           <Typography variant="body1" className={body} style={{marginTop: 0}}>
-            June 6th, 2019<br/>Eastern Health<br/> <span style={{fontWeight:'bold'}}>Communications/Web Content Coordinator</span>
+            June 26th, 2019<br/>Nalcor<br/> <span style={{fontWeight:'bold'}}>Programmer Analyst - NE-19-041</span>
           </Typography> 
           <Typography variant="body1" className={body}>
             To the Hiring Manager, <br /><br />This letter is in response to your advertisement for the position of 
-            Communications/Web Content Coordinator. Attached is my resume for consideration. I am the ideal Candidate for the following reasons:
+            Programmer Analyst. Attached is my resume for consideration. I am the ideal Candidate for the following reasons:
           </Typography>
 
           <List className={body}>
@@ -63,7 +63,7 @@ const CoverLetter = (props) => {
                 <Lens className={bullet} /> 
               </ListItemIcon>
               <Typography variant="body1">
-                Knowledgeable in CSS3, HTML5, JavaScript (ES6+), jQuery, Visual Studio.net and ReactJS using Context API for state management;
+                Knowledgeable in CSS3, HTML5, JavaScript (ES6+), jQuery, and ReactJS using Context API for state management;
               </Typography>
             </ListItem>
 

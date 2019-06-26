@@ -2,7 +2,6 @@ import React from 'react';
 import { Typography, Grid, withStyles } from '@material-ui/core';
 import Course from './Templates/Education';
 import ResumeData from './resume.json';
-// import layout from '../../../styles/SharedStyles.js';
 
 const styles = theme => ({
   main: {

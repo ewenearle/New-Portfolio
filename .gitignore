@@ -1,4 +1,2 @@
 /node_modules
-/Components/Layout/Resume/CoverLetter.js
-/Components/Layout/About.js
-cover letter address to.txt
+/src/Components/Layout/Resume/CoverLetter.js
